@@ -38,7 +38,7 @@
 
                 <div class="imgBox">
                     <!-- Swiper -->
-                    <div class="swiper mySwiper">
+                    <div class="swiper cocaSwiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide"><img src="./imagens/cocaClassic.png" /></div>
                             <div class="swiper-slide"><img src="./imagens/cocaClassic1.png" /></div>
@@ -60,13 +60,14 @@
                         <ion-icon name="logo-twitter"></ion-icon>
                     </a></li>
             </ul>
-            
+
         </section>
     </main>
 
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
     <script>
-        var swiper = new Swiper(".mySwiper", {
+        var swiper = new Swiper(".cocaSwiper", {
             effect: "coverflow",
             grabCursor: true,
             centeredSlides: true,
@@ -83,13 +84,6 @@
             },
             loop: true
         });
-
-        function toggleMenu(){
-            const menuToggle = document.querySelector('.toggle');
-            const navigation = document.querySelector('.navigation')
-            menuToggle.classList.toggle('active')
-            navigation.classList.toggle('active')
-        }
     </script>
 </body>
 
